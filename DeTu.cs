@@ -9,19 +9,16 @@
         Console.Write("Nhap ten de tu: ");
         Ten = Console.ReadLine();
 
-        do
-        {
-            Console.Write("Nhap can cung (1-10): ");
-            CanCung = int.Parse(Console.ReadLine());
-        } while (CanCung < 1 || CanCung > 10);
+        Console.Write("Nhap can cung 1-10: ");
+        CanCung = int.Parse(Console.ReadLine());
 
-        Console.Write("Nhap diem The luc: ");
+        Console.Write("Nhap diem the luc: ");
         DiemKhaoHach[0] = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhap diem Linh luc: ");
+        Console.Write("Nhap diem linh luc: ");
         DiemKhaoHach[1] = double.Parse(Console.ReadLine());
 
-        Console.Write("Nhap diem Ngo tinh: ");
+        Console.Write("Nhap diem ngo tinh: ");
         DiemKhaoHach[2] = double.Parse(Console.ReadLine());
     }
 
@@ -34,9 +31,7 @@
     {
         Console.WriteLine("Ten: " + Ten);
         Console.WriteLine("Can cung: " + CanCung);
-        Console.WriteLine("Diem The luc: " + DiemKhaoHach[0]);
-        Console.WriteLine("Diem Linh luc: " + DiemKhaoHach[1]);
-        Console.WriteLine("Diem Ngo tinh: " + DiemKhaoHach[2]);
         Console.WriteLine("Diem tong: " + TinhDiemTong());
+        Console.WriteLine("--------------------");
     }
 }
